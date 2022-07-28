@@ -1,0 +1,74 @@
+css is composed of three general parts:
+selector, property, value
+
+selectors refer to the html elements to which css rules apply
+    universal selector: *
+
+    type selectors: 
+        div, h1, p, etc.
+
+    class selectors: 
+        selects elements with the given class, you assign classes to html elements by adding class="<class name>" into an html tag. then in css, the selector will be .<class name> {}
+        an element can have multiple classes
+
+    id selectors: 
+        similar to classes, but you can only have one id for an element. 
+        the selector will be #<id name> {}
+
+    grouping selector:
+        when two selectors have some overlapping properties, you can do 
+            .selector1,
+            .selector2 {
+                overlapping properties
+            }
+
+            .selector1 {
+                independent properties
+            }
+
+            .selector2 {
+                independent properties
+            }
+
+    chaining selectors:
+        when have two elements, one with a title & page2 classes, and other one with a title & page2 classes.
+
+        when you want to assign a css rule to an element with the two elements "title and page2" ONLY (so the two classes are grouped and treated as if they are one class), you make the selector .title.page1 {}
+
+        can also be used with a class and an id, the selector would look .class#id {}
+
+descendant combinator
+    represented in CSS by a single space between selectors. A descendant combinator will ONLY cause elements that match the LAST SELECTOR to be selected if they also have an ANSCESTOR that matches the prev selector 
+
+    So something like .ancestor .child would select an element with the class child if it has an ancestor with the class ancestor.
+
+basic css properties
+    color:
+    background-color:
+    font-family: "Times New Roman", sans-serif;
+    font-size:
+    font-weight: (700 is usually the bold)
+    text-align: (where to align text within an element)
+
+
+image height and width
+    img {
+        height: auto;
+        width: 500px;
+    }
+
+specificity
+    ID selectors > class selectors > type selectors
+
+inheritance
+    usually typography based properties are inherited (font-, color), while others usually aren't
+
+adding css to html
+    external css
+        creating a seperate file for css and linking it inside of an html's opening and closing <head> tags with a self-closing <link> element
+            <link rel="stylesheet" href="styles.css">
+
+    internal css
+        adding css within the html file
+        you place all the rules inside the <style> tag which is placed inside the <head> tag
+        
