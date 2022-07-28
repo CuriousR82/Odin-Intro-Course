@@ -1,0 +1,15 @@
+it is a way to arrange items into rows or columns.
+
+these items flex based on rules that you cans define.
+
+flex containers and flex items
+    flex container is any element that has "display: flex;" on it.
+
+    flex item is any element that lives directly inside of a container.
+
+    example is "flex.png"
+
+any element can be both a flex xontainer and a flex item
+    example is "flex-in-flex.png"
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-properties-for-the-parentflex-container

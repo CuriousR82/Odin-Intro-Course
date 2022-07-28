@@ -1,0 +1,32 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-properties-for-the-parentflex-container
+
+so far we used the "flex: 1" rule to all items, but flex is also useful for arranging items that have a specific size.
+
+"flex: 1" makes each of th eitems grow to fill the available space. 
+
+but what if we want them to stay the same width, but distribute themselvees differently inside the container?
+    remove "flex: 1" from the ITEMS and add "justify-content: space-between" to CONTAINER 
+
+"justify-content" aligns items across the MAIN AXIS.
+    main axis is the x-axis.
+
+"align-items" places items along the CROSS AXIS.
+    cross axis is the y-axis. 
+
+    when you add "align-items: center" to CONTAINER, it will align all the items in the container to be in the center of the y-axis of the container.
+
+when you change the flex direction from row to column, "justify-content" will align vertically, and "align-items" will align horizontally.
+
+
+
+"gap" property
+    adds a specified space between flex items, very similar to adding a margin to the items themselves.
+
+    add "gap: npx;" to the CONTAINER, then the gap applies to the items inside the container.
+
+"flex-wrap: wrap"
+"flex-warp: nowrap"
+
+"flex-direction" and "flex-warp" combined is "flex-flow", the first value of it would be the direction, and the second value is the warp.
+    ex.) flex-flow: row wrap;
+
