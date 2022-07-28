@@ -1,0 +1,42 @@
+the box model
+    everything on a website is a rectangular box 
+
+    these boxes can have other boxes in them and can sit alongside one another
+
+    put a border arouond items to visualize the boxes
+        * {
+            border: 2px solid red;
+        }
+    
+    there are many ways to manipulate the size of these boxes and the space between them using "padding", "margin", and "border"
+        "padding" increases the space between the edge of a box and the content inside of it.
+
+        "margin" increases the space between a box and any others that sit next to it.
+
+        "border" adds space (even if it’s only a pixel or two) between the margin and the padding.
+
+use this to set the sixe of an element (with the margin and all) into the size of the set height
+    box-sizing: border-box;
+
+https://www.linkedin.com/learning/css-essential-training-3/inline-block-and-display?autoplay=true
+block and inline boxes
+    outer display type
+        has outer display type of "block":
+            WILL break onto a new line
+
+            WILL become as wide as its container (to the set width and height, or the div etc.)
+
+        has outer display type of "inline":
+            WILL NOT break onto a new line
+
+            WILL NOT become as wide as its container
+
+        has outer display type of "inline-block":
+            WILL NOT break onto a new line
+
+            WILL become as wide as its container (to the set width and height, or the div etc.)
+
+
+inner display type
+    boxes also have an INNER display type
+    
