@@ -1,0 +1,5 @@
+console.log() prints to the dev console in your browser
+
+variables are "storage containers" 
+    they are created by "var", "let", and "const" statements
+    
